@@ -1,0 +1,37 @@
+.homePageBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .titleBlock,
+  .contentBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .titleBlock {
+    margin-bottom: 100px;
+    .bigLogo {
+      width: 345px;
+      margin-right: 100px;
+    }
+  }
+
+  .contentBlock {
+    .presentation {
+      width: 720px;
+      margin-right: 100px;
+      color: $blanc;
+    }
+    .goBlindtest {
+      height: 60px;
+      width: 200px;
+      padding: 19px 24px;
+      border-radius: 25px;
+      border: 0;
+      background: $jaune;
+    }
+  }
+}

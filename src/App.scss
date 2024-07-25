@@ -1,3 +1,19 @@
 @import "./assets/scss/variables.scss";
-@import "./assets/scss/resetCss.css";
+@import "./assets/scss/reset.css";
 @import "./assets/scss/fonts.scss";
+@import "./assets/scss/header.scss";
+@import "./assets/scss/homePage.scss";
+
+.App {
+  background: $violet;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}

@@ -1,0 +1,13 @@
+header {
+  width: 240px;
+  height: 100vh;
+  background: $noir;
+  position: fixed;
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50px;
+    }
+  }
+}
