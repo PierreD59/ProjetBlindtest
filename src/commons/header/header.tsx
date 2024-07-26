@@ -1,20 +1,43 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const Header = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   return (
     <>
-      <header>
-        <div>
+      <header
+        className={
+          isNavExpanded ? "navigation-menu-close" : "navigation-menu-open"
+        }
+      >
+        <div className="logoBlock">
           <div className="logo">
-            <img src="img/logo.svg" alt="logo" />
-            <p>Blindtest</p>
+            <Link to={"/"}>
+              <img src="img/logo.svg" alt="logo" />
+              <p className="logoText">Blindtest</p>
+            </Link>
           </div>
-          <button></button>
+          <button
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+            className="IconOpenClose"
+          >
+            <img
+              src={isNavExpanded ? "img/closeIcon.svg" : "img/openIcon.svg"}
+              alt="logo"
+            />
+          </button>
         </div>
         <hr />
         <nav>
-          <div>
-            <img src="" alt="icon home" />
-            <p>Accueil</p>
-          </div>
+          <Link to={"/"}>
+            <div>
+              <img src="img/home.svg" alt="icon home" />
+              <p>Accueil</p>
+            </div>
+          </Link>
         </nav>
       </header>
     </>

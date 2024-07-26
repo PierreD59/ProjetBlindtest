@@ -14,3 +14,8 @@ $jaune: #ffe66d;
 $violet: #5f43b2;
 $rouge: #dc3545;
 $vert: #28a745;
+
+// boxShadow
+.boxShadow {
+  box-shadow: 5px 5px 10px $noir;
+}

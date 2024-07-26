@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HomePage: React.FC = () => {
   return (
     <>
@@ -16,7 +18,11 @@ const HomePage: React.FC = () => {
             quos, laboriosam tempore consectetur alias sunt, omnis quo officiis
             quasi!
           </p>
-          <button className="goBlindtest buttonText bold">En avant !</button>
+          <Link to={"/blindtest"}>
+            <button className="button buttonText bold boxShadow">
+              En avant !
+            </button>
+          </Link>
         </div>
       </div>
     </>

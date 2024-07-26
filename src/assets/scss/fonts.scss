@@ -2,22 +2,23 @@
   font: 125px $permanent;
   color: $blanc;
 }
-
 .presentationContent {
   font: 24px $poppins;
   color: $noir;
 }
-
 .buttonText {
   font: 18px $worksans;
   color: $noir;
 }
-
+.logoText,
+.textMenu {
+  font: 15px $poppins;
+  color: $blanc;
+}
 // Graisse
 .bold {
   font-weight: bold;
 }
-
 .normal {
   font-weight: normal;
 }
